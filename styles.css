@@ -17,15 +17,44 @@ header {
     width: 100%;
 }
 
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 main {
     padding: 20px;
-    max-width: 600px;
+    max-width: 800px;
     margin: auto;
 }
 
 h2 {
     color: #007bff;
     text-align: center;
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
 }
 
 ul {
@@ -33,14 +62,32 @@ ul {
     padding: 0;
 }
 
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-list li {
+    background: #e0e0e0;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+}
+
+blockquote {
+    background: #f9f9f9;
+    border-left: 5px solid #007bff;
+    margin: 20px 0;
+    padding: 10px 20px;
+}
+
 footer {
     text-align: center;
     padding: 10px;
     background: #333;
     color: white;
-    position: relative;
     width: 100%;
-    bottom: 0;
 }
 
 button {
@@ -62,4 +109,21 @@ button:hover {
 #contactForm {
     margin-top: 20px;
     text-align: center;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article h3 {
+    color: #007bff;
+}
+
+article a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+article a:hover {
+    text-decoration: underline;
 }
